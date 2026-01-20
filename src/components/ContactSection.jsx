@@ -25,7 +25,7 @@ const ContactSection = () => {
             <span className="info-icon email">✉</span>
             <div>
               <strong>Email</strong>
-              <p>nehasontakke1880@gmail.com</p>
+              <p>dev.mayuribharti@gmail.com</p>
             </div>
           </div>
 
@@ -33,7 +33,7 @@ const ContactSection = () => {
             <span className="info-icon phone">📞</span>
             <div>
               <strong>Phone</strong>
-              <p>+91 93594 81880</p>
+              <p>+91 9022896203</p>
             </div>
           </div>
 

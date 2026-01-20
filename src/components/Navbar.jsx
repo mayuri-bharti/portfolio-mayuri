@@ -8,9 +8,11 @@ const Navbar = () => {
     <nav className="navbar">
       {/* LOGO */}
       <div className="logo">
-        <span className="name">Neha Sontakke</span>
+        <span className="name">Mayuri Bharti</span>
         <span className="role">MERN Stack Developer</span>
+
       </div>
+      
 
       {/* NAV LINKS */}
       <ul className={`nav-links ${open ? "active" : ""}`}>

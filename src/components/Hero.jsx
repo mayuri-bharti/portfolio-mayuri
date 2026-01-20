@@ -1,91 +1,37 @@
-// const Hero = () => {
-//   return (
-//     <section className="hero">
-//       {/* background blur shapes */}
-//       <div className="blur blur-one"></div>
-//       <div className="blur blur-two"></div>
-
-//       <div className="hero-content">
-//         <span className="hero-badge">🚀 Available for MERN Roles</span>
-
-//         <h1>
-//           MERN <span>Full Stack</span> <br /> Developer
-//         </h1>
-
-//         <p>
-//           I design and build scalable, high-performance web applications
-//           using <strong>React</strong>, <strong>Node.js</strong>,
-//           <strong> Express</strong>, and <strong>MongoDB</strong>.
-//         </p>
-
-//         {/* tech stack pills */}
-//         <div className="hero-tech">
-//           <span>React</span>
-//           <span>Node.js</span>
-//           <span>Express</span>
-//           <span>MongoDB</span>
-//         </div>
-
-//         {/* actions */}
-//         <div className="hero-actions">
-//           <a href="/projects" className="btn primary">
-//             View My Work
-//           </a>
-//           <a href="/contact" className="btn secondary">
-//             Hire Me
-//           </a>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default Hero;
-
-
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
     <section className="hero">
-      <div className="blur blur-one"></div>
-      <div className="blur blur-two"></div>
+      {/* ===== BACKGROUND BALLOONS ===== */}
+      <div className="hero-right">
+        <div className="bubble html">Html</div>
+        <div className="bubble react">React</div>
+        <div className="bubble node">Node.js</div>
+        <div className="bubble mongo">MongoDB</div>
+        <div className="bubble python">JavaScript</div>
+      </div>
 
-      <div className="hero-content">
-        <span className="hero-badge">🚀 Available for MERN Roles</span>
+      {/* ===== FOREGROUND TEXT ===== */}
+      <motion.div
+        className="hero-left"
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
+        <span className="hero-line"></span>
 
         <h1>
-          MERN <span>Full Stack</span> <br /> Developer
+          Hello, I’m <span>Mayuri Bharti</span><br />
+          MERN Full-Stack Developer
         </h1>
 
-        <p>
-          I design and build scalable, high-performance web applications
-          using <strong>React</strong>, <strong>Node.js</strong>,
-          <strong> Express</strong>, and <strong>MongoDB</strong>.
-        </p>
-
-        <div className="hero-tech">
-          <span>React</span>
-          <span>Node.js</span>
-          <span>Express</span>
-          <span>MongoDB</span>
+        <div className="hero-links">
+          EXPLORE • EXPERIENCE • LEARN
         </div>
-
-        <div className="hero-actions">
-          <a href="/projects" className="btn primary">
-            View My Work
-          </a>
-
-          <a href="/Neha_Sontakke_Resume.pdf" download className="btn resume">
-            📄 Download Resume
-          </a>
-
-          <a href="/contact" className="btn secondary">
-            Hire Me
-          </a>
-        </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
 
-export default Hero;
+export default Hero; 
