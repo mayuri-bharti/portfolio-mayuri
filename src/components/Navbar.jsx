@@ -10,9 +10,7 @@ const Navbar = () => {
       <div className="logo">
         <span className="name">Mayuri Bharti</span>
         <span className="role">MERN Stack Developer</span>
-
       </div>
-      
 
       {/* NAV LINKS */}
       <ul className={`nav-links ${open ? "active" : ""}`}>
@@ -32,7 +30,7 @@ const Navbar = () => {
         {/* RESUME DOWNLOAD */}
         <li>
           <a
-            href="/Neha_MERN_Developer.pdf"
+            href="/MAYURI-BHARTI-RESUME2-year.pdf"
             download
             className="hire-btn"
             onClick={() => setOpen(false)}
